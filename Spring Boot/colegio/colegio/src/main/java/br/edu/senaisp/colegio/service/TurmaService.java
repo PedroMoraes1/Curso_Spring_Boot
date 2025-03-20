@@ -42,5 +42,14 @@ public class TurmaService {
 		}
 		return null;
 	}
+
+	public Turma alterarPorId(Long id, Turma turma) {
+		//Optional<Turma> op = repo.findById(id);
+		//Turma tmp = op.orElse(null);
+		
+		//tmp.setNome(turma.getNome());
+		
+		return repo.save(turma);
+	}
 	
 }
